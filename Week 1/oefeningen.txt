@@ -1,0 +1,49 @@
+Hier is een reeks oefeningen gesorteerd op toenemende moeilijkheid:
+
+Let op: als er gevraagd wordt naar willekeurige getallen: je kan werken met zelfgekozen getallen
+maar je kan ook werken met Math.random() -> willekeurig getalletje tussen 0 en 1
+
+### **Variabelen**
+1. **Aanmaken van variabelen**  
+   Maak drie variabelen aan: een string met je naam, een nummer met je leeftijd, en een boolean die aangeeft of je programmeerervaring hebt. Log ze in de console.
+
+2. **Rekenkundige operaties**  
+   Maak twee variabelen aan, `a` en `b`, met willekeurige getallen. Bereken en log de som, het verschil, het product en het quotiënt.
+
+3. **Const en Let**  
+   Schrijf een script waarin je probeert een `const`-variabele opnieuw toe te wijzen. Observeer en log het resultaat.
+
+---
+
+### **Functies**
+4. **Eenvoudige functie**  
+   Schrijf een functie genaamd `greet` die een naam als parameter accepteert en "Hallo, [naam]!" retourneert. Roep de functie aan.
+
+5. **Functie met meerdere parameters**  
+   Schrijf een functie genaamd `calculateRectangleArea` die lengte en breedte accepteert en de oppervlakte van een rechthoek retourneert.
+
+6. **Anonieme functies en pijlfuncties**  (pijlfunctie is () => {})  deze functie is niet noodzakelijk om te kennen
+   Schrijf dezelfde functie uit oefening 5 als een anonieme functie en als een pijlfunctie.
+
+---
+
+### **Lussen**
+7. **For-loop**  
+   Schrijf een for-loop die de getallen 1 t/m 10 in de console logt.
+
+8. **Array-iteratie**  
+   Maak een array aan met de dagen van de week en gebruik een for-loop om ze allemaal in de console te loggen.
+
+9. **While-loop**  
+   Schrijf een script dat een getal verdubbelt totdat het groter is dan 1000, en log elke tussenstap.
+
+---
+
+### **Lijsten (Arrays)**
+13. **Manipulatie**  
+    Maak een array met de cijfers 1 t/m 5. Voeg een cijfer toe aan het begin en einde, verwijder het eerste en laatste element, en log het resultaat.
+
+14. **Filtering**  
+    Maak een array met willekeurige getallen. Gebruik de `filter`-methode om alleen even getallen te behouden.
+
+Deze oefeningen bieden een solide basis om de basissyntax van JavaScript te leren en vertrouwd te raken met belangrijke concepten.
