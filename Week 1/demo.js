@@ -62,7 +62,7 @@ person.geboortedatum = new Date();
 console.log(person);
 
 /*
-person -> plaats 0x10321901 in het geheugen
+person -> plaats 0x10321901 in het geheugen					deze waarde wordt vergeleken met ==  en met === worden de waarden vergeleken
                 -> daarin heb je 
                     -> firstname
                     -> lastname

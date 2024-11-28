@@ -1,0 +1,1 @@
+// Schrijf een functie die de eerste n getallen optelt (n is een parameter)
