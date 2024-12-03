@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>getElementByID </h1>
@@ -26,6 +28,52 @@
         <li class="test">Vijfde</li>
         <li>Zesde</li>
     </ul>
+
+    <h1>Events</h1>
+    <button id="clickFunctionButton" class="btn">Click function</button>
+    <button id="clickAnonymousButton" class="btn">Click anonymous function</button>
+    <button id="clickArrowButton" class="btn">Click arrow function</button>
+
+    <h1>UseCapture demo</h1>
+    <div id="outer-div">
+        <div id="inner-div">
+            <button class="btn" id="button">test</button>
+        </div>
+    </div>
+
+    <h1>Remove event listener</h1>
+    <button class="btn" id="clickBtn">Click</button>
+    <button class="btn" id="addBtn">Add</button>
+    <button class="btn" id="removeBtn">Remove</button>
+
+    <h1>Dom manipulatie inner html</h1>
+    <p> om de html inhoud van een element op te vragen</p>
+
+    <p id="id">Een paragraaf</p>
+    <p> een andere paragraaf</p>
+
+    <button id="knop" class="btn">click</button>
+
+    <h1>Dom manipulatie: classlist</h1>
+
+    <p id="p1">een alinea</p>
+    <p id="p2">een andere alinea</p>
+
+    <button class="btn" id="btnAddCls">add</button>
+    <button class="btn" id="btnRemCls">remove</button>
+    <button class="btn" id="btnContainsCls">contains</button>
+    <button class="btn" id="btnToggleCls">toggle</button>
+
+    <h1>Dom manipulatie: attributen</h1>
+
+    <p id="p3" data-nummer="12">een alinea</p>
+    <p id="p4">een andere alinea</p>
+
+    <button class="btn" id="btnHasAtt">hasAttribute('data-nummer')</button>
+    <button class="btn" id="btnGetAtt">getAttribute('data-nummer')</button>
+    <button class="btn" id="btnSetAtt">setAttribute('data-nummer')</button>
+    <button class="btn" id="btnRemoveAtt">removeAttribute('data-nummer')</button>
+
 
     <!--Javascript code best onderaan, dan zijn al je html elementen reeds ingeladen in het dom-->
     <script src="dom.js"></script>
