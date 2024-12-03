@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Oefeningen</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header id="page-header">
+    <h1>Welkom op de Selector Oefenpagina</h1>
+    <p id="intro-text">Hier kun je oefenen met verschillende DOM-selectoren in JavaScript.</p>
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2 class="title">Sectie 1</h2>
+      <p class="text">Dit is een paragraaf in sectie 1.</p>
+      <button id="btn-section1">Klik hier</button>
+    </section>
+
+    <section id="section2">
+      <h2 class="title">Sectie 2</h2>
+      <p class="text">Dit is een paragraaf in sectie 2.</p>
+      <p class="text">Dit is nog een paragraaf in sectie 2.</p>
+      <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+      </ul>
+    </section>
+
+    <footer id="page-footer">
+      <p>© 2024 Selector Oefenpagina</p>
+    </footer>
+  </main>
+
+  <script>
+    /**
+     * Oefeningen:
+     * 
+     * 1. Gebruik `getElementById` om het header-element (`page-header`) te selecteren
+     *    en log dit in de console.
+     * 
+     * 2. Gebruik `querySelector` om het eerste element met de klasse `title` te selecteren
+     *    en log dit in de console.
+     * 
+     * 3. Gebruik `querySelectorAll` om alle elementen met de klasse `item` te selecteren
+     *    en log deze in de console.
+     * 4. Gebruik `getElementById` om het element met de ID `intro-text` te selecteren
+     *    en log de tekstinhoud (`textContent`) in de console.
+     * 
+     * 5. Gebruik `querySelector` om het eerste `<li>`-element binnen de lijst in `section2` te selecteren
+     *    en log het in de console.
+     * 
+     * 6. Gebruik `querySelectorAll` om alle `<p>`-elementen in `section2` te selecteren
+     *    en log de verzameling (NodeList) in de console.
+     * 
+     * 7. Gebruik `querySelectorAll` om alle elementen met de klasse `text` te selecteren.
+     *    Loop door de verzameling en log de tekstinhoud (`textContent`) van elk element in de console.
+     * 
+     * 8. Gebruik `querySelector` om het `<ul>`-element in `section2` te selecteren
+     *    en log het aantal kinderen (`childElementCount`) van dit element in de console.
+     * 
+     * 9. Gebruik `querySelectorAll` om alle `<h2>`-elementen te selecteren
+     *    en log de verzameling in de console.
+     * 
+     * 10. Gebruik `querySelector` om het `<footer>`-element te selecteren
+     *     en log de volledige HTML-inhoud (`innerHTML`) van dit element in de console.
+     * 
+     * 11. Gebruik `querySelector` om de eerste `<button>` op de pagina te selecteren
+     *     en log het attribuut `id` van dit element in de console.
+     * 
+     * 12. Gebruik `querySelector` om de eerste `<section>` op de pagina te selecteren
+     *     en log de waarde van zijn attribuut `id` in de console.
+     * 
+     * 13. Gebruik `querySelectorAll` om alle elementen met een klasse `item` te selecteren
+     *     en log het totaal aantal geselecteerde elementen in de console.
+     * 
+     * 14. Gebruik `querySelector` om een element met een niet-bestaande klasse, zoals `.does-not-exist`, te selecteren.
+     *     Controleer en log het resultaat in de console (wat wordt er geretourneerd?).
+     * 
+     * 15. Gebruik `querySelector` om de eerste `<p>`-element in de pagina te selecteren
+     *     en log zowel zijn directe ouder (`parentNode`) als zijn volgende broer of zus (`nextSibling`) in de console.
+     */
+  </script>
+</body>
+</html>
