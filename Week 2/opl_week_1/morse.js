@@ -55,3 +55,42 @@ morseDict['@']='·——·—·';
 morseDict['&']='·–···';
 
 morseDict[' ']=' ';
+
+const reverseDict = {};
+
+for(let c in morseDict){
+	// DIt is de omgekeerde volgorde van hierboven
+	// morseDict['&']='·–···';   => morseDict['·–···']='&';
+	reverseDict[morseDict[c]] = c;
+}
+
+function toMorse(text){
+	text = text.toUpperCase();
+
+	let result = [];
+
+	for(let c of text.split('')){
+		c = morseDict[c];
+		result.push(c);
+	}
+
+	return result.join('|');
+}
+
+let morse = toMorse('hello world');
+console.log(morse);
+
+function fromMorse(morseCode){
+
+	let result = [];
+
+	for(let c of morseCode.split('|')){
+		c = reverseDict[c];
+		result.push(c);
+	}
+
+	return result.join('');
+}
+
+let text = fromMorse(morse);
+console.log(text);
