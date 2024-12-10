@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulier</h1>
+    <ul id="errors">
+
+    </ul>
+
+    <!-- door de action redirect dit formulier naar form2.html-->
+     <!--door get wordt dit toegevoegd aan de url: ?username=test&passwoord=abcd-->
+     <!--dit is volledig leesbaar dus niet gebruiken voor data te bewaren in de database-->
+    <form id="loginForm" action="form2.html" method="get" autocomplete="off">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" value="test" required>
+        <br/>
+        <label for="passwoord">Passwoord:</label>
+        <input id="passwoord" name="passwoord" type="password" value="abcd"> <!--Type password maakt het onleesbaar als je typt-->
+        <br/>
+        <button type="submit" id="sendbtn">Send</button>
+    </form>
+
+    <!--Breid het form hierboven uit door een input toe te voegen voor
+    age
+    email
+    radio met twee opties (1, 2)
+    select met twee opties (1, 2)
+    -->
+
+    <script src="form.js"></script>
+</body>
+</html>
