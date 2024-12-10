@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulier</h1>
+    <ul id="errors">
+
+    </ul>
+
+    <!-- door de action redirect dit formulier naar form2.html-->
+     <!--door get wordt dit toegevoegd aan de url: ?username=test&passwoord=abcd-->
+     <!--dit is volledig leesbaar dus niet gebruiken voor data te bewaren in de database-->
+    <form id="loginForm" action="form2.html" method="post" autocomplete="off" novalidate>
+    <!-- voeg novalidate toe als je begint met javascript validatie en foutboodschappen te verwijderen-->
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" value="test" required>
+        <br/>
+        <label for="passwoord">Passwoord:</label>
+        <input id="passwoord" name="passwoord" type="password" value="abc" minlength="4" maxlength="8" required> <!--Type password maakt het onleesbaar als je typt-->
+        <br/>
+        <label for="birthdate">Birthdate:</label>
+        <input id="birthdate" name="birthdate" type="date">  <!--id en name niet verplicht om gelijk te zijn maar is wel vaak zo-->
+        <br/>
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="number" max="110" min="18"> 
+        <br/>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" pattern=".*@student\.odisee\.be">
+        <!--
+            Regex
+            . -> een willekeurig karakter
+            * -> 0 of meer van het teken ervoor
+            .* -> wil zeggen willekeurige tekst
+            @student\.odisee\.be -> de tekst moet eindigen met @student.odisee.be
+            het \ teken is om het volgend teken als karakter te interpreteren en niet als speciaal teken
+            ? -> 0 of 1 van het teken ervoor
+            + -> 1 of meer van het teken ervoor 
+            [a-zA-z]* -> alle kleine en grote letters (0 of meer keer)
+                -> adkljfalkfdjald voldoet eraan
+        --> 
+        <br/>
+        <input type="radio" id="radio1" name="radio" value="r1"><label for="radio1">Radio1</label>
+        <input type="radio" id="radio2" name="radio" value="r2"><label for="radio2">Radio2</label>
+        <!--Radio buttons met dezelfde naam behoren tot dezelfde groep -> maar 1 selecteren -->
+        <br/>
+        <label for="select">Select:</label>
+        <select name="select" id="select">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select>
+        <br/>
+        <button type="submit" id="sendbtn">Send</button>
+    </form>
+
+    <!--Breid het form hierboven uit door een input toe te voegen voor
+    birthdate
+    age
+    email
+    radio met twee opties (1, 2)
+    select met twee opties (1, 2)
+    -->
+
+    <script src="form.js"></script>
+</body>
+</html>
