@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Event delegation</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="coll s8"></div>
+            <div class="coll s1 right-align">Geselecteerd:</div>
+            <div class="coll s1 left-align"><span id='geselecteerd'>0</span></div>
+            <div class="coll s1 right-align">Prijs</div>
+            <div class="coll s1 left-align"><span id="totaalPrijs">0</span></div>
+        </div>
+    </div>
+
+    <table class="striped centered responsive-table">
+        <thead>
+            <tr>
+                <th>Omschrijving</th>
+                <th>Prijs</th>
+                <th>Aantal</th>
+                <th>Voeg toe/verwijder</th>
+            </tr>
+        </thead>
+        <tbody id="producten"></tbody>
+    </table>
+
+    <script src="events.js"></script>
+</body>
+</html>
