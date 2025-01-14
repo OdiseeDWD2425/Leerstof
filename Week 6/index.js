@@ -28,7 +28,11 @@ const configBar2 = {
 				{x: 'Blue', y:1},
 				{x: 'Green', y:3},
 				{x: 'Orange', y:5},
-			]
+			],
+			borderwidth:100 // optie per reeks, kleuren aanpassen
+		}, {
+			label: 'Reeks 2', 
+			data: [1,2,3,4,5,6]
 		}] 
 	}
 };
@@ -45,7 +49,7 @@ const configOther = {
 			data: [1,2,3,4,5,6]
 		}] 
 	},
-	options: {
+	options: { // met options is voor globale opties/aanpassingen van de grafiek (assen, legende, title, ...)
 		plugins: {
 			legend: {
 				display: true,
